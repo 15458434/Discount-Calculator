@@ -11,7 +11,18 @@
 		38FA11DB20222722007C1C0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA11DA20222722007C1C0A /* ViewController.swift */; };
 		38FA11DD20222722007C1C0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FA11DC20222722007C1C0A /* Assets.xcassets */; };
 		38FA11E020222722007C1C0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FA11DE20222722007C1C0A /* Main.storyboard */; };
+		38FA11E9202227EC007C1C0A /* CalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA11E8202227EC007C1C0A /* CalculationModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38FA11F320222CBE007C1C0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38FA11CD20222722007C1C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38FA11D420222722007C1C0A;
+			remoteInfo = Discount;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38FA11D520222722007C1C0A /* Discount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discount.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +32,19 @@
 		38FA11DF20222722007C1C0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38FA11E120222722007C1C0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FA11E220222722007C1C0A /* Discount.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Discount.entitlements; sourceTree = "<group>"; };
+		38FA11E8202227EC007C1C0A /* CalculationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationModel.swift; sourceTree = "<group>"; };
+		38FA11EE20222CBE007C1C0A /* DiscountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		38FA11D220222722007C1C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FA11EB20222CBE007C1C0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				38FA11D520222722007C1C0A /* Discount.app */,
+				38FA11EE20222CBE007C1C0A /* DiscountTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +76,7 @@
 			children = (
 				38FA11D820222722007C1C0A /* AppDelegate.swift */,
 				38FA11DA20222722007C1C0A /* ViewController.swift */,
+				38FA11E8202227EC007C1C0A /* CalculationModel.swift */,
 				38FA11DC20222722007C1C0A /* Assets.xcassets */,
 				38FA11DE20222722007C1C0A /* Main.storyboard */,
 				38FA11E120222722007C1C0A /* Info.plist */,
@@ -83,6 +105,24 @@
 			productReference = 38FA11D520222722007C1C0A /* Discount.app */;
 			productType = "com.apple.product-type.application";
 		};
+		38FA11ED20222CBE007C1C0A /* DiscountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FA11F520222CBE007C1C0A /* Build configuration list for PBXNativeTarget "DiscountTests" */;
+			buildPhases = (
+				38FA11EA20222CBE007C1C0A /* Sources */,
+				38FA11EB20222CBE007C1C0A /* Frameworks */,
+				38FA11EC20222CBE007C1C0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38FA11F420222CBE007C1C0A /* PBXTargetDependency */,
+			);
+			name = DiscountTests;
+			productName = DiscountTests;
+			productReference = 38FA11EE20222CBE007C1C0A /* DiscountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +136,11 @@
 					38FA11D420222722007C1C0A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					38FA11ED20222CBE007C1C0A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 38FA11D420222722007C1C0A;
 					};
 				};
 			};
@@ -113,6 +158,7 @@
 			projectRoot = "";
 			targets = (
 				38FA11D420222722007C1C0A /* Discount */,
+				38FA11ED20222CBE007C1C0A /* DiscountTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +173,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38FA11EC20222CBE007C1C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,12 +187,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FA11E9202227EC007C1C0A /* CalculationModel.swift in Sources */,
 				38FA11DB20222722007C1C0A /* ViewController.swift in Sources */,
 				38FA11D920222722007C1C0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		38FA11EA20222CBE007C1C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38FA11F420222CBE007C1C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38FA11D420222722007C1C0A /* Discount */;
+			targetProxy = 38FA11F320222CBE007C1C0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		38FA11DE20222722007C1C0A /* Main.storyboard */ = {
@@ -291,6 +360,38 @@
 			};
 			name = Release;
 		};
+		38FA11F620222CBE007C1C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z6JP26PUUY;
+				INFOPLIST_FILE = DiscountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.DiscountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discount.app/Contents/MacOS/Discount";
+			};
+			name = Debug;
+		};
+		38FA11F720222CBE007C1C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z6JP26PUUY;
+				INFOPLIST_FILE = DiscountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GreenHair.DiscountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discount.app/Contents/MacOS/Discount";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -308,6 +409,15 @@
 			buildConfigurations = (
 				38FA11E620222722007C1C0A /* Debug */,
 				38FA11E720222722007C1C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38FA11F520222CBE007C1C0A /* Build configuration list for PBXNativeTarget "DiscountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FA11F620222CBE007C1C0A /* Debug */,
+				38FA11F720222CBE007C1C0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
