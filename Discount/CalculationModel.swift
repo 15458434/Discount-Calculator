@@ -14,12 +14,14 @@ import Cocoa
     @objc dynamic var discountPrice: NSNumber?
     
     @IBAction func changeOfPrice(_ sender: Any) {
-        let price = self.originalPrice ?? 0 as NSNumber
-        let discountPercentage = self.discountPercentage ?? 0 as NSNumber
-        self.discountPrice = discountPrice(from: price, and: discountPercentage)
+        calcDiscountPrice()
     }
     
     @IBAction func changeOfPercentage(_ sender: Any) {
+        calcDiscountPrice()
+    }
+    
+    func calcDiscountPrice() {
         let price = self.originalPrice ?? 0 as NSNumber
         let discountPercentage = self.discountPercentage ?? 0 as NSNumber
         self.discountPrice = discountPrice(from: price, and: discountPercentage)
